@@ -1,0 +1,338 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<!-- ======================================================================= -->
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">google.load("jquery", "1.3.2");</script>
+<style type="text/css">
+
+  @font-face {
+    font-family: 'hp';
+    src: url(hpfont.ttf);
+  }
+
+  body {
+    font-family: "Titillium Web","HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight:300;
+    font-size:18px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1100px;
+  }
+
+  h1 {
+    font-weight:300;
+  }
+
+  .disclaimerbox {
+    background-color: #eee;
+    border: 1px solid #eeeeee;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+    padding: 20px;
+  }
+
+  video.header-vid {
+    height: 140px;
+    border: 1px solid black;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+  }
+
+  img.header-img {
+    height: 140px;
+    border: 1px solid black;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+  }
+
+  img.rounded {
+    border: 1px solid #eeeeee;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+  }
+
+  a:link,a:visited
+  {
+    color: #1367a7;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #208799;
+  }
+
+  td.dl-link {
+    height: 160px;
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+    box-shadow:
+            0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+            5px 5px 0 0px #fff, /* The second layer */
+            5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+            10px 10px 0 0px #fff, /* The third layer */
+            10px 10px 1px 1px rgba(0,0,0,0.35), /* The third layer shadow */
+            15px 15px 0 0px #fff, /* The fourth layer */
+            15px 15px 1px 1px rgba(0,0,0,0.35), /* The fourth layer shadow */
+            20px 20px 0 0px #fff, /* The fifth layer */
+            20px 20px 1px 1px rgba(0,0,0,0.35), /* The fifth layer shadow */
+            25px 25px 0 0px #fff, /* The fifth layer */
+            25px 25px 1px 1px rgba(0,0,0,0.35); /* The fifth layer shadow */
+    margin-left: 10px;
+    margin-right: 45px;
+  }
+
+
+  .layered-paper { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+    box-shadow:
+            0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+            5px 5px 0 0px #fff, /* The second layer */
+            5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+            10px 10px 0 0px #fff, /* The third layer */
+            10px 10px 1px 1px rgba(0,0,0,0.35); /* The third layer shadow */
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 30px;
+    margin-bottom: 5px;
+  }
+
+  .vert-cent {
+    position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+  }
+
+  hr
+  {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  }
+
+  #authors td {
+    padding-bottom:5px;
+    padding-top:30px;
+  }
+
+  /* .hp-font {
+    font-family: hp,
+  } */
+</style>
+<!-- ======================================================================= -->
+
+<!-- Start : Google Analytics Code -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-64069893-4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-64069893-4');
+</script> -->
+<!-- End : Google Analytics Code -->
+
+<script type="text/javascript" src="resources/hidebib.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,400italic,600italic,300,300italic' rel='stylesheet' type='text/css'>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="icon" type="image/png" href="media/icon.png">
+  <title>Sonus Texere! Automated Dense Soundtrack Construction for Books Using Movie Adaptations</title>
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="canonical" href="https://jaidevshriram.com/auto-book-soundtrack" />
+  <meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <meta property="og:site_name" content="Automated Book Soundtrack Construction" />
+  <meta property="og:type" content="video.other" />
+  <meta property="og:title" content="Sonus Texere! Automated Dense Soundtrack Construction for Books Using Movie Adaptations" />
+  <meta property="og:description" content="Shriram, Tapaswi, Alluri. Sonus Texere! Automated Dense Soundtrack Construction for Books Using Movie Adaptations. 2022." />
+  <meta property="og:url" content="https://jaidevshriram.com/auto-book-soundtrack" />
+  <meta property="og:image" content="https://jaidevshriram.com/auto-book-soundtrack/auto-book-soundtrack/media/overview.png" />
+  <!-- <meta property="og:video" content="https://www.youtube.com/v/ngCIB-IWD8E" /> -->
+
+  <!-- <meta property="article:publisher" content="http://people.eecs.berkeley.edu/~pathak/" /> -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Learning to Control Self-Assembling Morphologies: A Study of Generalization via Modularity" />
+  <meta name="twitter:description" content="Pathak, Lu, Darrell, Isola, Efros. Learning to Control Self-Assembling Morphologies: A Study of Generalization via Modularity. 2019." />
+  <meta name="twitter:url" content="https://jaidevshriram.com/auto-book-soundtrack" />
+  <meta name="twitter:image" content="https://jaidevshriram.com/auto-book-soundtrack/auto-book-soundtrack/media/overview.png" />
+  <meta name="twitter:label1" content="Written by" />
+  <meta name="twitter:data1" content="Jaidev Shriram" />
+  <meta name="twitter:label2" content="Filed under" />
+  <meta name="twitter:data2" content="" />
+  <meta name="twitter:site" content="@JaidevShriram" />
+  <meta property="og:image:width" content="1600" />
+  <meta property="og:image:height" content="900" />
+
+  <!-- <script src="https://www.youtube.com/iframe_api"></script>
+  <meta name="twitter:card" content="player" />
+  <meta name="twitter:image" content="https://jaidevshriram.com/auto-book-soundtrack/auto-book-soundtrack/media/overview.png" />
+  <meta name="twitter:player" content="https://www.youtube.com/embed/ngCIB-IWD8E?rel=0&showinfo=0" />
+  <meta name="twitter:player:width" content="640" />
+  <meta name="twitter:player:height" content="360" /> -->
+</head>
+
+<body>
+      <br>
+      <center><span style="font-size:44px;font-weight:bold;"><span style="font-family: 'hp';font-size:90px;">Sonus Texere!</span>
+        <br/>Automated Dense Soundtrack Construction for Books Using Movie Adaptations</span>
+      </center><br/>
+      <table align=center width=1000px>
+      <tr>
+        <td align=center width=190px>
+        <center><span style="font-size:22px"><a href="https://jaidevshriram.com" target="_blank">Jaidev Shriram</a></span></center></td>
+        <td align=center width=19px>
+        <center><span style="font-size:22px"><a href="https://makarandtapaswi.github.io/" target="_blank">Makarand Tapaswi *</a></span></center></td>
+        <td align=center width=190px>
+        <center><span style="font-size:22px"><a href="https://www.vinooalluri.com/" target="_blank">Vinoo Alluri *</a></span></center></td>
+      <tr/>
+      <tr>
+        <td align=center width=450px colspan="3">
+        <center><span style="font-size:20px">International Institute of Information Technology, Hyderabad</span></center></td>
+      <tr/>
+      </table>
+      <!-- <table align=center width=600px style="padding-top:0px;padding-bottom:20px">
+          <tr>
+            <td align=center width=600px><center><span style="font-size:20px">* equal contribution</span></center></td>
+          <tr/>
+      </table> -->
+      <table align=center width=700px>
+          <tr>
+            <td align=center width=700px><center><span style="font-size:22px">Accepted at <a href="https://ismir2022.ismir.net/">ISMIR, 2022</a></span></center></td>
+          <tr/>
+      </table><br/>
+      <table align=center width=900px>
+          <tr>
+            <td align=center width=100px><center><span style="font-size:28px"><a href="media/paper.pdf">[Paper]</a></span></center></td>
+            <td align=center width=100px><center><span style="font-size:28px"><a href="#">[Arxiv]</a></span></center></td>            
+            <td align=center width=100px><center><span style="font-size:28px"><a href="./demo/index.html">[Demo]</a></span></center></td>
+            <!-- <td align=center width=100px><center><span style="font-size:28px"><a href="resources/poster.pdf">[Poster]</a></span></center></td> -->
+            <td align=center width=150px><center><span style="font-size:28px"><a href='https://github.com/jaidev/auto-book-soundtrack/'>[GitHub Code (Soon)]</a></span></center></td>
+          <tr/>
+      </table><br/>
+
+<!--       <center><h2>Project Video</h2></center> -->
+      <table align=center width=300px>
+      <tr><td align=center width=300px>
+        <img src="media/overview.png" />
+      <!-- <iframe width="768" height="432" src="https://www.youtube.com/embed/ngCIB-IWD8E?rel=0" frameborder="0" allowfullscreen></iframe> -->
+      </td></tr>
+      </table>
+      <br>
+
+      <div style="width:800px; margin:0 auto; text-align:left">
+        Reading, much like music listening, is an immersive experience that transports readers while taking them on an emotional journey. Listening to complementary music has the potential to amplify the reading experience, especially when the music is stylistically cohesive and emotionally relevant. In this paper, we propose the first fully automatic method to build a dense soundtrack for books, which can play high-quality instrumental music for the entirety of the reading duration. Our work employs a unique text processing and music weaving pipeline that determines the context and emotional composition of scenes in a chapter. This allows our method to identify and play relevant excerpts from the soundtrack of the book's movie adaptation. By relying on the movie composer's craftsmanship, our book soundtracks include expert-made motifs and other scene-specific musical characteristics. We validate the design decisions of our approach through a perceptual study. Our readers note that the book soundtrack greatly enhanced their reading experience, due to high immersiveness granted via uninterrupted and style-consistent music, and a heightened emotional state attained via high precision emotion and scene context recognition.
+      </div>
+      <br><hr>
+
+      <center><h1>Try it out!</h1></center>
+      <div style="width:800px; margin:0 auto; text-align:center">
+        Read the final chapter of Harry Potter and the Philosopher's Stone with accompanying music.
+      </div>
+      <br/>
+      <table align=center width=1000px>
+        <p style="margin-top:2px;"></p>
+        <tr><td align=center width=1200px>
+          <center><a href="./demo/index.html"><img src="media/app_preview.png" height="450px"/></a><br></center>
+        </td></tr>
+        <tr>
+          <td width=300px align=center>
+            <br/>
+            <span style="font-size:28px"><a href='./demo/index.html'>[Demo]</a></span>
+          </td>
+        </tr>
+      <table>
+
+      <br/><hr>
+
+      <center><h1>Automatic Book Soundtrack Generation</h1></center>
+      <div style="width:800px; margin:0 auto; text-align:center">
+        We generate the final soundtrack by aligning scenes in the book to the movie, identifying the audio played, and finally weaving the scene-specific audio together to create an endless soundtrack. In the absence of movie cues, we rely on emotion-based matching to retrieve appropriate music.
+      </div><br/>
+      <br/>
+      <table align=center width=1000px>
+        <p style="margin-top:2px;"></p>
+        <tr><td align=center width=500px>
+          <center><img src="media/alignment.png" width="1000px"/><br></center>
+        </td></tr>
+      <table>
+      <br/><hr>
+
+      <center id="sourceCode"><h1>Code (soon)</h1></center>
+      <div style="width:800px; margin:0 auto; text-align:center">
+      The implementation for all parts of this project has been made public on GitHub. Check it out!
+      </div>
+      <table align=center width=900px>
+        <tr>
+          <!-- <p style="margin-top:4px;"></p> -->
+          <td width=300px align=center>
+            <span style="font-size:28px"><a href='https://github.com/jaidevshriram/auto-book-soundtrack/'>[GitHub]</a></span>
+          </td>
+        </tr>
+      </table>
+      <br><hr>
+
+      <table align=center width=850px>
+        <center><h1>Paper and Bibtex</h1></center>
+        <tr>
+        <td width=250px align=left>
+        <!-- <p style="margin-top:4px;"></p> -->
+        <a href="media/paper.pdf"><img style="height:300px" src="media/paper_overview.png"/></a>
+        <center>
+        <span style="font-size:20pt"><a href="media/paper.pdf">[Paper]</a>
+        <!-- <span style="font-size:20pt"><a href="https://arxiv.org/abs/1902.05546v2">[ArXiv]</a> -->
+        <!-- <span style="font-size:20pt"><a href="resources/slides.pdf">[Slides]</a></span>
+        <span style="font-size:20pt"><a href="resources/poster.pdf">[Poster]</a></span> -->
+        </center>
+        </td>
+        <td width=50px align=center>
+        </td>
+        <td width=550px align=left>
+        <!-- <p style="margin-top:4px;"></p> -->
+        <p style="text-align:left;"><b><span style="font-size:20pt">Citation</span></b><br/><span style="font-size:6px;">&nbsp;<br/></span> <span style="font-size:15pt">Jaidev Shriram, Makarand Tapaswi, Vinoo Alluri. <b>Sonus Texere! Automated Dense Soundtrack Construction for Books Using Movie Adaptations<br/></b> In <i>ISMIR</i> 2022.</span></p>
+        <!-- <p style="margin-top:20px;"></p> -->
+        <span style="font-size:20pt"><a shape="rect" href="javascript:togglebib('sonus22_bib')" class="togglebib">[Bibtex]</a></span>
+        </td>
+        </tr>
+        <tr>
+        <td width=250px align=left>
+        </td>
+        <td width=50px align=center>
+        </td>
+        <td width=550px align=left>
+          <div class="paper" id="sonus22_bib">
+<pre xml:space="preserve">
+@inproceedings{shriram2022booksoundtrack,
+  Author = {Jaidev Shriram and Makarand Tapaswi and Vinoo Alluri},
+  Title = {Sonus Texere! Automated Dense 
+          Soundtrack Construction for Books Using Movie Adaptations},
+  Booktitle = {ISMIR},
+  Year = {2022}
+}</pre>
+          </div>
+          </td>
+          </tr>
+      </table>
+    <br><hr>
+
+    <table align=center width=800px>
+      <tr><td width=800px><left>
+      <center><h1>Acknowledgements</h1></center>
+      We thank Siddarth Baasri for his valuable input in analysing motifs present in the Harry Potter soundtrack and Saravanan Senthil for illustrating Fig. 1 in the paper. 
+      <br/><br/>
+      Website template from <a href="https://pathak22.github.io/modular-assemblies/" target="_blank">here</a>.
+    </left></td></tr>
+    </table>
+  <br><br>
+<script xml:space="preserve" language="JavaScript">
+hideallbibs();
+</script>
+</body>
+</html>
